@@ -13,7 +13,7 @@ try {
 	// парсим аргументы командной строки с помощью специального модуля `command-line-args`
 	options = commandLineArgs(config.definitions, process.argv);
 } catch (err) {
-	console.log('Invalid usage! Use --help for help');
+	console.error('Invalid usage! Use --help for help');
 	throw err;
 }
 
